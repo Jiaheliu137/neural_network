@@ -1,0 +1,19 @@
+Error in the 1-th learning cycle=4.391804
+Error in the 2-th learning cycle=3.647490
+Error in the 3-th learning cycle=1.944532
+Error in the 4-th learning cycle=1.882734
+Error in the 5-th learning cycle=3.397979
+Error in the 6-th learning cycle=1.396447
+Error in the 7-th learning cycle=1.972744
+Error in the 8-th learning cycle=1.959355
+Error in the 9-th learning cycle=1.926832
+Error in the 10-th learning cycle=1.798133
+Error in the 11-th learning cycle=2.503469
+Error in the 12-th learning cycle=1.791384
+Error in the 13-th learning cycle=0.030948
+
+
+The connection weights are:
+1.450174 0.961033 0.855636 
+-0.418867 -2.326298 0.079352 
+-0.914259 1.212048 0.269981 

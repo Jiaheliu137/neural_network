@@ -1,0 +1,10 @@
+the out put of each pattern in 1-th learning cycle: -1.000000 -1.000000 -1.000000 -1.000000 
+the out put of each pattern in 2-th learning cycle: 1.000000 1.000000 -1.000000 -1.000000 
+the out put of each pattern in 3-th learning cycle: -1.000000 1.000000 1.000000 -1.000000 
+the out put of each pattern in 4-th learning cycle: -1.000000 -1.000000 1.000000 -1.000000 
+the out put of each pattern in 5-th learning cycle: -1.000000 1.000000 -1.000000 1.000000 
+the out put of each pattern in 6-th learning cycle: -1.000000 -1.000000 -1.000000 1.000000 
+
+
+The connection weights of the neurons:
+2.359964 1.204080 2.633837 

@@ -1,0 +1,9 @@
+Error in the 1-th learning cycle=8.000000
+Error in the 2-th learning cycle=4.000000
+Error in the 3-th learning cycle=0.000000
+
+
+The connection weights are:
+7.989551 6.691381 -0.307619 
+-3.344016 -11.676882 1.211629 
+-9.624688 -1.559694 0.941556 
