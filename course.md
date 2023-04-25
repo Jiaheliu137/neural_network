@@ -18,7 +18,7 @@ Such arrangements of two-period lectures and two-period project time have
 been made for many years. The purpose is to let students understand the
 topics better by doing simple simulations at the same time.
 
-2. Team Projects:
+2. Team Projects
 
 
 There are over 40 students in our classes. Some of students might cancel this course after taking 
