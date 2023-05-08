@@ -15,7 +15,7 @@ def main():
 
     hidden_neurons = 8
     learning_rate = 2
-    num_epochs = 50000
+    num_epochs = 5000
 
     input_size = inputs.shape[1] # shape(inputs) = (16, 5)
     output_size = outputs.shape[1] # shape(outputs) = (16, 1)

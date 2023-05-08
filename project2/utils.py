@@ -39,7 +39,7 @@ def generate_parity_dataset(n_parity):
         inputs.append(input_vector)
 
         num_of_ones = sum(input_vector[:-1])
-        output = 0 if num_of_ones % 2 == 0 else 1
+        output = 0 if num_of_ones % 2 else 1
         outputs.append([output])
 
     inputs = np.array(inputs)
