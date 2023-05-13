@@ -1,12 +1,4 @@
-/***********************************************************************/
-/* c-Program for constructing an autoassociative memory                */
-/* The model is the Hopfield neural network with asynchorous update    */
-/* If you want to use it for applications other than that described    */
-/* in this project, please provide the patterns to be stored           */
-/*                                                                     */
-/* This program is produced by Qiangfu Zhao.                           */
-/* You are free to use it for educational purpose                      */
-/***********************************************************************/
+
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -58,7 +50,7 @@ int pattern[n_pattern][n_neuron]={
    1,-1,-1,-1,-1,-1,-1,-1,-1,-1, 1, 1,
    1,-1,-1,-1,-1,-1,-1,-1,-1,-1, 1, 1}};
 
-int w[n_neuron][n_neuron];
+double w[n_neuron][n_neuron];
 int v[n_neuron];
 /***********************************************************************/
 /* Output the patterns, to confirm they are the desired ones           */
@@ -119,6 +111,7 @@ Recall_Pattern(int m)
   int   net, vnew;
   double r;
 
+  srand(6); // use 4 as seed will lead wrong result
   for(i=0;i<n_neuron;i++)
     { r=(double)(rand()%10001)/10000.0;
       if(r<noise_rate)
@@ -163,6 +156,7 @@ Initialization()
 /***********************************************************************/
 main()
 { int k;
+  
 
   for(k=0;k<n_pattern;k++) Output_Pattern(k);
 

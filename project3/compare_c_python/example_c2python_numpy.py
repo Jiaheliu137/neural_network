@@ -1,4 +1,5 @@
 import numpy as np
+np.set_printoptions(threshold=np.inf)
 
 n_neuron = 120
 n_pattern = 4
@@ -75,7 +76,10 @@ def store_pattern():
     for i in range(n_neuron):
         for j in range(n_neuron):
             w[i][j] = sum(pattern[k][i]*pattern[k][j] for k in range(n_pattern)) / n_pattern
+           
         w[i][i] = 0
+        w = np.floor(w)
+        print(w)
 
 def recall_pattern(m):
     global v

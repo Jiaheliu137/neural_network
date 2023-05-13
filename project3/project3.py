@@ -30,25 +30,26 @@ w = np.zeros((n_neuron, n_neuron))
 
 
 # Store patterns in the weight matrix
-for key in original_patterns:
-    pattern = original_patterns[key]
-    w += np.outer(pattern, pattern)
-w /= n_pattern
-np.fill_diagonal(w, 0)
-print(w)
-
-
 # for key in original_patterns:
 #     pattern = original_patterns[key]
-#     print(key,pattern)
-#     for i in range(n_neuron):
-#         for j in range(n_neuron):           
-#             w[i, j] += pattern[i] * pattern[j] 
-#         # w[i, i] = 0
-
+#     w += np.outer(pattern, pattern)
 # w /= n_pattern
+# w = np.floor(w)
 # np.fill_diagonal(w, 0)
-# # print(w)
+# print(w)
+
+
+for key in original_patterns:
+    pattern = original_patterns[key]
+    print(key,pattern)
+    for i in range(n_neuron):
+        for j in range(n_neuron):           
+            w[i, j] += pattern[i] * pattern[j] 
+        # w[i, i] = 0
+
+w = np.floor(w/n_pattern)
+np.fill_diagonal(w, 0)
+print(w)
 
 
 # Recall patterns and store in pattern_store
