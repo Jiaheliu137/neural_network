@@ -78,6 +78,7 @@ def visualize_2d(data, labels, n_clusters):
 def visualize_3d(data, labels, n_clusters):
     fig = plt.figure()
     ax = fig.add_subplot(111, projection='3d')
+    #cmap_list = ['cool', 'hot', 'jet', 'viridis', 'rainbow', 'gray']
     cmap_list = ['viridis']
     cmap = plt.cm.get_cmap(random.choice(cmap_list), n_clusters)  # get color map
     cluster_counts = cluster_summary(data, labels, n_clusters)
