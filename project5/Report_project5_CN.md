@@ -12,7 +12,7 @@
 
 
 
-## 2.Team Project IV
+## 2.Team Project V
 
 - Using SOFM(Self-Organization feature map) algorithm to cluster the Iris dataset (http://www.ics.uci.edu/~mlearn/MLRepository.html).
 

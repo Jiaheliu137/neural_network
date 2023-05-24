@@ -9,7 +9,7 @@ np.set_printoptions(linewidth=np.inf)
 
 def main():
 
-    n_parity = 5
+    n_parity = 4
     inputs, outputs = generate_parity_dataset(n_parity) # shape(inputs) = (16, 5), shape(outputs) = (16, 1)
     print( outputs )
 
