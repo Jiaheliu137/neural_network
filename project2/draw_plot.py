@@ -6,8 +6,8 @@ from utils import *
 n_parity = 4
 inputs, outputs = generate_parity_dataset(4)
 
-learning_rates = [0.5, 1.0, 1.5, 2, 2.5, 3.0]
-hidden_neurons_list = [4, 6, 8, 10, 12, 14]
+learning_rates = [0.5, 1.0, 1.5, 2.0]
+hidden_neurons_list = [4, 6, 8]
 num_epochs = 5000
 
 num_repeats = 10

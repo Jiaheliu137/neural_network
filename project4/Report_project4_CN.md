@@ -1,4 +1,4 @@
-# Project4
+# Project
 
 ## 1.Team member
 
@@ -81,6 +81,8 @@ i^* & = \arg\max_i \mathbf{x} \cdot \mathbf{W}_{i,:} \\
 \end{align*}
 $$
 在这里，$i^*$ 表示点积最大的那个神经元的索引，从数学上看，点积最大代表着方向最一致，也就是权重和输入的模式最相似
+
+**weights[m0] += learning_rate * (x[p] - weights[m0]):the direction of x[p] - weights[m0] is weights[m0]-->x[p]**
 
 $\mathbf{W}_{i,:}$ 表示权重矩阵 $\mathbf{W}$ 中的第 $i$ 行，$\alpha$ 是学习率，它控制了权重更新的步长。
 

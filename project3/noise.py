@@ -1,5 +1,6 @@
 import json
 import numpy as np
+import argparse
 
 def load_patterns(file_path):
     with open(file_path, 'r') as f:
@@ -23,14 +24,31 @@ def save_patterns(patterns, file_path):
     with open(file_path, 'w') as f:
         json.dump(patterns, f)
 
-def main():
-    noise_levels = [0.0, 0.1, 0.15, 0.20, 0.25,0.40, 0.50]
-    patterns = load_patterns('./pattern.json')
+# def main():
+#     noise_levels = [0.0, 0.1, 0.15, 0.20, 0.25,0.40, 0.50]
+#     noise_level = 0.21
+#     patterns = load_patterns('./pattern.json')
 
-    for noise_level in noise_levels:
-        noisy_patterns = add_noise(patterns, noise_level)
-        save_path = f'./pattern_{int(noise_level * 100)}.json'
-        save_patterns(noisy_patterns, save_path)
+#     for noise_level in noise_levels:
+#         noisy_patterns = add_noise(patterns, noise_level)
+#         save_path = f'./pattern_{int(noise_level * 100)}.json'
+#         save_patterns(noisy_patterns, save_path)
+   
+
+# if __name__ == '__main__':
+#     main()
+
+def main(noise_level):
+    if noise_level < 0 or noise_level > 1:
+        raise ValueError("The noise level must be between 0 and 1.")
+
+    patterns = load_patterns('./pattern.json')
+    noisy_patterns = add_noise(patterns, noise_level)
+    save_path = f'./pattern_{int(noise_level * 100)}.json'
+    save_patterns(noisy_patterns, save_path)
 
 if __name__ == '__main__':
-    main()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-nl", "--noise_level", help="Noise level between [0-1]", type=float, default=0.2)
+    args = parser.parse_args()
+    main(args.noise_level)
