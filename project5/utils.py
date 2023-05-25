@@ -33,6 +33,7 @@ def InputPattern(filename):
     # Convert the structured array to a regular numpy array
     data_array = np.array([list(d)[:I] for d in data])
     x = data_array
+    print("Data with labels:\n")
     for p in range(P):
         for i in range(I):
             print(x[p][i], end='  ')
@@ -93,13 +94,20 @@ def SOFM(n_update, r1, r2, Nc1, Nc2, w, x, I, P):
 
 
 
-def Calibration(w, x, label0, I, P):
+def Calibration(w, x, label0, I, P, label_dict):
     label = ['.'] * N
+    label_list = [[] for _ in range(N)]  # Initialize the list of labels for each neuron
+    overlap_dict = {}
     for p in range(P):
         d = np.linalg.norm(w - x[p], axis=1)  # calculate the Euclidean distance
         n0 = np.argmin(d)  # find the index of the smallest distance
         label[n0] = str(label0[p])
-    return label
+        label_list[n0].append(label0[p])  # Add the label to the neuron's list of labels
+
+    for i in range(N):
+        if len(label_list[i]) > 1:  # If multiple labels are assigned to the same neuron
+            overlap_dict[tuple(label_list[i])] = label_dict[label_list[i][0]]
+    return label, overlap_dict
 
 
 
