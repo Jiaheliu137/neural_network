@@ -270,9 +270,22 @@ For example，we can output the patterns who are assigned the same neuron:
 (101, 142): class2
 ```
 
+Use "(9, 34, 37): class0" as example:
 
+In Iris datasets:
 
+**label 9:    4.9,3.1,1.5,0.1,Iris-setosa**
 
+**label 34:  4.9,3.1,1.5,0.1,Iris-setosa**
+
+**label 36:  5.5,3.5,1.3,0.2,Iris-setosa**
+
+We can find that the similarity of these overlapping data is indeed very high.
+
+|      |      |
+| ---- | ---- |
+|      |      |
+|      |      |
 
 
 
