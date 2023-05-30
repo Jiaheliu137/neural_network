@@ -186,7 +186,7 @@ Assign labels ranging from 0 to 149 to the 150 sets of data in the Iris dataset.
 
 ![截屏2023-05-24 01.22.04](./Report_project5_CN.assets/%E6%88%AA%E5%B1%8F2023-05-24%2001.22.04.png)
 
-It can be observed that the data retains topological structure after dimensionality reduction. At the same time, the distribution of the data aligns with the given classifications in the dataset. Data belonging to the same class are accurately clustered together.
+#### It can be observed that the data retains topological structure after dimensionality reduction. At the same time, the distribution of the data aligns with the given classifications in the dataset. Data belonging to the same class are accurately clustered together.
 
 ### 2.Don’t use given class
 

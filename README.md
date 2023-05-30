@@ -92,6 +92,8 @@ python project5.py -c 3
 
 - -c | --cluster : Number of clusters,the value is recommended $2 \leq c \leq 6$
 
+5. [Final_Presentation](./Final_Presentation.pptx)
+
 
 
 

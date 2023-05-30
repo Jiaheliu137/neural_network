@@ -65,6 +65,8 @@ def main(noisy_level):# 0, 10, 15, 20, 25, 40, 50
             # w[i, i] = 0
 
     w = w/n_pattern
+    # w = np.floor(w)
+    # w = w.astype(int)
     np.fill_diagonal(w, 0)
     # print(w)
 
